@@ -6,24 +6,44 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
+    // Derived/Child class Cat uses abstract Animal class to substantiate a Cat object.
     class Cat : Animal
     {
-      
+        // Default constructor for Cat class.
+        public Cat()
+        {
+            setName("Kitten");
+            setAge(0);
+            setNoise("meow");
+            setWeight(0.5);
+        }
+        
+        // Parameterized constructor for Cat class.
+        public Cat(string name, int age, double weight)
+        {
+            setName(name);
+            setAge(age);
+            setNoise("meow");
+            setWeight(weight);
+        }
+        
+        // Overridden method to increase the age of Cat object.
         public override void ageUp()
         {
-            base.setAge(base.getAge() + 1);
-
+            setAge(getAge() + 1);
         }
 
+        // Overridden method to make noise of Cat object.
         public override void makeNoise()
         {
             Console.WriteLine(getName() + " lets out a " + getNoise() + ".");
         }
 
+        // Overridden method to print info of Cat object.
         public override void printInfo()
         {
-            Console.WriteLine("This cat is named " + base.getName() + " and is " + base.getAge() + " years old.");
-            Console.WriteLine(base.getName() + " weighs " + base.getWeight() + " pounds and makes a " + getNoise() + " noise.");
+            Console.WriteLine("This " + this.GetType().Name.ToLower() + " is named " + getName() + " and is " + getAge() + " years old.");
+            Console.WriteLine(getName() + " weighs " + getWeight() + " pounds and makes a " + getNoise() + " noise.");
         }
     }
 }
