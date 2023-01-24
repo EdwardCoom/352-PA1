@@ -10,6 +10,17 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            Cat Henry = new Cat();
+
+            Henry.setName("Henry");
+            Henry.setAge(7);
+            Henry.setWeight(13.5);
+            Henry.setNoise("Meow");
+            Henry.printInfo();
+
+            Console.WriteLine( Henry.getName());
+            Console.ReadKey();
+
         }
     }
 }
