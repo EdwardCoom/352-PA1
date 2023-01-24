@@ -62,6 +62,7 @@ namespace ProgrammingAssignment1
             foreach(var Animal in myAnimals)
             {
                 Animal.printInfo();
+                Console.WriteLine();
             }
         }
 
@@ -71,6 +72,7 @@ namespace ProgrammingAssignment1
             foreach (var Animal in myAnimals)
             {
                 Animal.makeNoise();
+                Console.WriteLine();
             }
         }
 
