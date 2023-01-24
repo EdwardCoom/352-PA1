@@ -1,4 +1,9 @@
-﻿using System;
+﻿// Derived Class Cheetah implementation file
+// CSCI 352 PA1
+// Zach Coomer
+// 01/24/2023
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

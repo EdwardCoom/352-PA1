@@ -1,4 +1,9 @@
-﻿using System;
+﻿// World Class and Main() implementation File
+// CSCI 352 PA1
+// Zach Coomer
+// 01/24/2023
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace ProgrammingAssignment1
 {
-    // Class that houses the List of Animals and is the main driver where all of the Derived Animal Classes come together.
+    // Class that houses the List of Animals and is the main driver where all of the Derived Animal Classes come together also contains Main().
     class World
     {
         // The List that contains all of the different types of Animals to be added and interacted with.
