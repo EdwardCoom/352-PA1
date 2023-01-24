@@ -12,8 +12,8 @@ namespace ProgrammingAssignment1
         // Default constructor for Cheetah class.
         public Cheetah()
         {
-            setName("Big kitten");
-            setAge(0);
+            Name = "Big kitten";
+            Age = 0;
             setNoise("explosive yelp");
             setWeight(0.5);
         }
@@ -21,8 +21,8 @@ namespace ProgrammingAssignment1
         // Parameterized constructor for Cheetah class.
         public Cheetah(string name, int age, double weight)
         {
-            setName(name);
-            setAge(age);
+            Name = name;
+            Age = age;
             setNoise("explosive yelp");
             setWeight(weight);
         }
@@ -30,20 +30,20 @@ namespace ProgrammingAssignment1
         // Overridden method to increase the age of Cheetah object.
         public override void ageUp()
         {
-            setAge(getAge() + 1);
+            Age = Age + 1;
         }
 
         // Overridden method to make noise of Cheetah object.
         public override void makeNoise()
         {
-            Console.WriteLine(getName() + " lets out an " + getNoise() + ".");
+            Console.WriteLine(Name + " lets out an " + getNoise() + ".");
         }
 
         // Overridden method to print info of Cheetah object.
         public override void printInfo()
         {
-            Console.WriteLine("This " + this.GetType().Name.ToLower() + " is named " + getName() + " and is " + getAge() + " year(s) old.");
-            Console.WriteLine(getName() + " weighs " + getWeight() + " pound(s) and makes an " + getNoise() + " noise.");
+            Console.WriteLine("This " + this.GetType().Name.ToLower() + " is named " + Name + " and is " + Age + " year(s) old.");
+            Console.WriteLine(Name + " weighs " + getWeight() + " pound(s) and makes an " + getNoise() + " noise.");
         }
     }
 }

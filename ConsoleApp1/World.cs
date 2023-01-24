@@ -12,17 +12,18 @@ namespace ProgrammingAssignment1
         {
             Cat Henry = new Cat();
             Cassowary Jack = new Cassowary();
-            Cheetah Brad = new Cheetah();
+            Cheetah Brad = new Cheetah("Brad", 15, 57.8);
 
-            //Henry.ageUp();
-            //Henry.makeNoise();
-            //Henry.printInfo();
+            Henry.ageUp();
+            Henry.makeNoise();
+            Henry.printInfo();
 
-            //Jack.makeNoise();
-            //Jack.printInfo();
+            Jack.makeNoise();
+            Jack.printInfo();
 
             Brad.makeNoise();
             Brad.printInfo();
+
 
             Console.ReadKey();
 

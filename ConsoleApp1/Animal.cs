@@ -10,8 +10,8 @@ namespace ProgrammingAssignment1
     abstract class Animal
         
     {
-        private string Name;
-        private int Age;
+        public string Name { get; set; }
+        public int Age { get; set; }
         private string Noise;
         private double Weight;
 
@@ -24,29 +24,29 @@ namespace ProgrammingAssignment1
         // Abstract method to increase the age of Animals.
         public abstract void ageUp();
         
-        // Setter method used to name Animals.
-        public void setName(string s)
-        {
-            Name = s;
-        }
+        //// Setter method used to name Animals.
+        //public void setName(string s)
+        //{
+        //    Name = s;
+        //}
         
-        // Getter method used to retrieve Animal name.
-        public string getName()
-        {
-            return Name;
-        }
+        //// Getter method used to retrieve Animal name.
+        //public string getName()
+        //{
+        //    return Name;
+        //}
         
         // Setter method used to set Animal age.
-        public void setAge(int a)
-        {
-            Age = a;
-        }
+        //public void setAge(int a)
+        //{
+        //    Age = a;
+        //}
         
-        // Getter method used to retrieve Animal age.
-        public int getAge()
-        {
-            return Age;
-        }
+        //// Getter method used to retrieve Animal age.
+        //public int getAge()
+        //{
+        //    return Age;
+        //}
         
         // Setter method used to set Animal Noise.
         public void setNoise(string n)

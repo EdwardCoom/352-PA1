@@ -11,10 +11,12 @@ This assignment is my first C# assignment coming from C++. In this assignment we
 ## Notes
 
 * Design Decisions: 
-	- 	I decided to add individual files for each class, this keeps the main driver nice and concise. This allows easy access to each class without having to sift through convoluted code. 
+	- 	I decided to add individual files for each class, this keeps the main driver nice and concise. This allows easy access to each class without having to sift through convoluted code.
+	-	During research I saw that you can use properties to simplify getters and setters and also still have private members. 
 
 * Things I Found Interesting:
 	-	I found a way to code in the actual class name in the printInfo method and I was able to add a .ToLower() to that code to seamlessly integrate the name of the class into the printInfo message. This allowed me to reuse the same code in all of the Derived classes.
+	-	I found properties to be a very efficient and clean way to write getters and setters, unfortunately I found out about them midway through writing my program.
 
 * Things I Found Difficult: 
 	-	Adding a README.md was not explicitly obvious, I wanted to avoid adding it through Github and then pulling so I could do it all from Visual Studios. After a little research and trials it is pretty simple now. 
