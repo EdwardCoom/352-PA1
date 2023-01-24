@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    // Derived/Child class Cat uses abstract Animal class to substantiate a Cat object.
+    // Concrete Derived/Child class Cat uses abstract Animal class to substantiate a Cat object.
     class Cat : Animal
     {
         // Default constructor for Cat class.
@@ -15,7 +15,7 @@ namespace ConsoleApp1
             setName("Kitten");
             setAge(0);
             setNoise("meow");
-            setWeight(0.5);
+            setWeight(0.2);
         }
         
         // Parameterized constructor for Cat class.

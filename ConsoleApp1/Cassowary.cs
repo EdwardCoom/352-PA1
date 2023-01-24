@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    // Derived/Child class Cassowary uses abstract Animal class to substantiate a Cassowary object.
+    // Concrete Derived/Child class Cassowary uses abstract Animal class to substantiate a Cassowary object.
     class Cassowary : Animal
     {
         // Default constructor for Cassowary class.
@@ -15,7 +15,7 @@ namespace ConsoleApp1
             setName("Chick");
             setAge(0);
             setNoise("deep, low-frequency rumbling and booming sound");
-            setWeight(0.5);
+            setWeight(1.1);
         }
 
         // Parameterized constructor for Cassowary class.
