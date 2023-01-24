@@ -10,9 +10,16 @@ namespace ProgrammingAssignment1
     abstract class Animal
         
     {
+        // Property for Name, private member but public getter and setter functions.
         public string Name { get; set; }
+
+        // Property for Age, private member but public getter and setter functions.
         public int Age { get; set; }
+
+        // Property for Noise, private member but public getter and setter functions.
         public string Noise { get; set; }
+
+        // Property for Weight, private member but public getter and setter functions.
         public double Weight { get; set; }
 
         // Abstract method to print information about Animals.
@@ -24,53 +31,6 @@ namespace ProgrammingAssignment1
         // Abstract method to increase the age of Animals.
         public abstract void ageUp();
         
-        //// Setter method used to name Animals.
-        //public void setName(string s)
-        //{
-        //    Name = s;
-        //}
-        
-        //// Getter method used to retrieve Animal name.
-        //public string getName()
-        //{
-        //    return Name;
-        //}
-        
-        // Setter method used to set Animal age.
-        //public void setAge(int a)
-        //{
-        //    Age = a;
-        //}
-        
-        //// Getter method used to retrieve Animal age.
-        //public int getAge()
-        //{
-        //    return Age;
-        //}
-        
-        // Setter method used to set Animal Noise.
-        //public void setNoise(string n)
-        //{
-        //    Noise = n;
-        //}
-        
-        //// Getter method used to retrieve Animal Noise.
-        //public string getNoise()
-        //{
-        //    return Noise;
-        //}
-        
-        //// Setter method used to set Animal weight.
-        //public void setWeight(double w)
-        //{
-        //    Weight = w;
-        //}
-        
-        //// Getter method used to retrieve Animal weight.
-        //public double getWeight()
-        //{
-        //    return Weight;
-        //}
         
     }
 }
