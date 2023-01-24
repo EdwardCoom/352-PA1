@@ -10,7 +10,15 @@ This assignment is my first C# assignment coming from C++. In this assignment we
 
 ## Notes
 
-*
-*
-*
-*
+* Design Decisions: 
+	- 	I decided to add individual files for each class, this keeps the main driver nice and concise. This allows easy access to each class without having to sift through convoluted code. 
+
+* Things I Found Interesting:
+	-	I found a way to code in the actual class name in the printInfo method and I was able to add a .ToLower() to that code to seamlessly integrate the name of the class into the printInfo message. This allowed me to reuse the same code in all of the Derived classes.
+
+* Things I Found Difficult: 
+	-	Adding a README.md was not explicitly obvious, I wanted to avoid adding it through Github and then pulling so I could do it all from Visual Studios. After a little research and trials it is pretty simple now. 
+	-	Learning how to interact between the Abstract Animal Base/Parent class and the Derived/Children classes. I had quite a few hair pulling moments until I learned how to use the getter and setter methods properly. The syntax is much more simple in C# than in C++ and while this is great coming from C++ may lead one to overthink certain aspects.
+
+* Limitations:
+	-	This program is just breaking the ice on C# and is likely plagued with many limitations and does not have much functionality but that is the intention. 
