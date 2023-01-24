@@ -42,8 +42,8 @@ namespace ConsoleApp1
         // Overridden method to print info of Cat object.
         public override void printInfo()
         {
-            Console.WriteLine("This " + this.GetType().Name.ToLower() + " is named " + getName() + " and is " + getAge() + " years old.");
-            Console.WriteLine(getName() + " weighs " + getWeight() + " pounds and makes a " + getNoise() + " noise.");
+            Console.WriteLine("This " + this.GetType().Name.ToLower() + " is named " + getName() + " and is " + getAge() + " year(s) old.");
+            Console.WriteLine(getName() + " weighs " + getWeight() + " pound(s) and makes a " + getNoise() + " noise.");
         }
     }
 }

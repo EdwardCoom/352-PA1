@@ -10,13 +10,16 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Cat Henry = new Cat("Henry", 12, 13.43);
+            Cat Henry = new Cat();
+            Cassowary Jack = new Cassowary();
 
-            Henry.ageUp();
-            Henry.makeNoise();
-            Henry.printInfo();
+            //Henry.ageUp();
+            //Henry.makeNoise();
+            //Henry.printInfo();
 
-            Console.WriteLine( Henry.getName());
+            Jack.makeNoise();
+            Jack.printInfo();
+
             Console.ReadKey();
 
         }
