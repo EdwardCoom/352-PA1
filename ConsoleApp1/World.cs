@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace ProgrammingAssignment1
 {
+    // Class that houses the List of Animals and is the main driver where all of the Derived Animal Classes come together.
     class World
     {
-        public string Type { get; set; }
+        // The List that contains all of the different types of Animals to be added and interacted with.
         List<Animal> myAnimals = new List<Animal>();
 
+        // Function that allows Animals to be added to the myAnimals List.
         public void addAnimal()
         {
             string type;
@@ -49,6 +51,7 @@ namespace ProgrammingAssignment1
             }
         }
 
+        // Function that prints info of the current Animals in the list.
         public void printInfo()
         {
             foreach(var Animal in myAnimals)
@@ -57,6 +60,7 @@ namespace ProgrammingAssignment1
             }
         }
 
+        // Function that allows the user to make the Animals make noise.
         public void makeNoise()
         {
             foreach (var Animal in myAnimals)
@@ -65,6 +69,7 @@ namespace ProgrammingAssignment1
             }
         }
 
+        // Function that allows the user to age the Animals in the List.
         public void ageUp()
         {
             foreach (var Animal in myAnimals)
@@ -72,11 +77,13 @@ namespace ProgrammingAssignment1
                 Animal.ageUp(); 
             }
         }
+
         static void Main(string[] args)
         {
             World myWorld = new World();
             int userChoice;
 
+            // Do-while loop that allows the interaction menu to be displayed.
             do
             {
                 Console.WriteLine("Animal interaction menu.");
