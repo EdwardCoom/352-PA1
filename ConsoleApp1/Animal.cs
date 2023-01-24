@@ -6,59 +6,71 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
+    // Base class for Animals, abstract class as to not be insantiated but to provide a base point or blueprint for more specific animals.
     abstract class Animal
-        // Base class for Animals, abstract class as to not be insantiated but to provide a base point for more specific animals.
+        
     {
         private string Name;
         private int Age;
         private string Noise;
         private double Weight;
 
-        public abstract void printInfo();
         // Abstract method to print information about Animals.
-        public abstract void makeNoise();
+        public abstract void printInfo();
+        
         // Abstract method to make noise from Animals.
-        public abstract void ageUp();
+        public abstract void makeNoise();
+        
         // Abstract method to increase the age of Animals.
+        public abstract void ageUp();
+        
+        // Setter method used to name Animals.
         public void setName(string s)
         {
             Name = s;
         }
-        // Setter method used to name Animals.
+        
+        // Getter method used to retrieve Animal name.
         public string getName()
         {
             return Name;
         }
-        // Getter method used to retrieve Animal name.
+        
+        // Setter method used to set Animal age.
         public void setAge(int a)
         {
             Age = a;
         }
-        // Setter method used to set Animal age.
+        
+        // Getter method used to retrieve Animal age.
         public int getAge()
         {
             return Age;
         }
-        // Getter method used to retrieve Animal age.
+        
+        // Setter method used to set Animal Noise.
         public void setNoise(string n)
         {
             Noise = n;
         }
-        // Setter method used to set Animal Noise.
+        
+        // Getter method used to retrieve Animal Noise.
         public string getNoise()
         {
             return Noise;
         }
-        // Getter method used to retrieve Animal Noise. 
+        
+        // Setter method used to set Animal weight.
         public void setWeight(double w)
         {
             Weight = w;
         }
-        // Setter method used to set Animal weight.
+        
+        // Getter method used to retrieve Animal weight.
         public double getWeight()
         {
             return Weight;
         }
-        // Getter method used to retrieve Animal weight.
+        
     }
 }
