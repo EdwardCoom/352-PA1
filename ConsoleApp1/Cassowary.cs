@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace ProgrammingAssignment1
 {
     // Concrete Derived/Child class Cassowary uses abstract Animal class to substantiate a Cassowary object.
     class Cassowary : Animal

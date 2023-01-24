@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace ProgrammingAssignment1
 {
     // Abstract Base class for Animals, abstract class as to not be insantiated but to provide a base point or blueprint for more specific animals.
     abstract class Animal

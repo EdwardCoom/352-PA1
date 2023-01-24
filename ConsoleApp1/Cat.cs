@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace ProgrammingAssignment1
 {
     // Concrete Derived/Child class Cat uses abstract Animal class to substantiate a Cat object.
     class Cat : Animal

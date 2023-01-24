@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace ProgrammingAssignment1
 {
     // Concrete Derived/Child class Cheetah uses abstract Animal class to substantiate a Cheetah object.
     class Cheetah : Animal
