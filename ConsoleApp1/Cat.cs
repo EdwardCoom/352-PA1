@@ -14,8 +14,8 @@ namespace ProgrammingAssignment1
         {
             Name = "Kitten";
             Age = 0;
-            setNoise("meow");
-            setWeight(0.2);
+            Noise = "meow";
+            Weight = 0.2;
         }
         
         // Parameterized constructor for Cat class.
@@ -23,8 +23,8 @@ namespace ProgrammingAssignment1
         {
             Name = name;
             Age = age;
-            setNoise("meow");
-            setWeight(weight);
+            Noise = "meow";
+            Weight = weight;
         }
         
         // Overridden method to increase the age of Cat object.
@@ -36,14 +36,14 @@ namespace ProgrammingAssignment1
         // Overridden method to make noise of Cat object.
         public override void makeNoise()
         {
-            Console.WriteLine(Name + " lets out a " + getNoise() + ".");
+            Console.WriteLine(Name + " lets out a " + Noise + ".");
         }
 
         // Overridden method to print info of Cat object.
         public override void printInfo()
         {
             Console.WriteLine("This " + this.GetType().Name.ToLower() + " is named " + Name + " and is " + Age + " year(s) old.");
-            Console.WriteLine(Name + " weighs " + getWeight() + " pound(s) and makes a " + getNoise() + " noise.");
+            Console.WriteLine(Name + " weighs " + Weight + " pound(s) and makes a " + Noise + " noise.");
         }
     }
 }

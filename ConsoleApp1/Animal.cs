@@ -12,8 +12,8 @@ namespace ProgrammingAssignment1
     {
         public string Name { get; set; }
         public int Age { get; set; }
-        private string Noise;
-        private double Weight;
+        public string Noise { get; set; }
+        public double Weight { get; set; }
 
         // Abstract method to print information about Animals.
         public abstract void printInfo();
@@ -49,28 +49,28 @@ namespace ProgrammingAssignment1
         //}
         
         // Setter method used to set Animal Noise.
-        public void setNoise(string n)
-        {
-            Noise = n;
-        }
+        //public void setNoise(string n)
+        //{
+        //    Noise = n;
+        //}
         
-        // Getter method used to retrieve Animal Noise.
-        public string getNoise()
-        {
-            return Noise;
-        }
+        //// Getter method used to retrieve Animal Noise.
+        //public string getNoise()
+        //{
+        //    return Noise;
+        //}
         
-        // Setter method used to set Animal weight.
-        public void setWeight(double w)
-        {
-            Weight = w;
-        }
+        //// Setter method used to set Animal weight.
+        //public void setWeight(double w)
+        //{
+        //    Weight = w;
+        //}
         
-        // Getter method used to retrieve Animal weight.
-        public double getWeight()
-        {
-            return Weight;
-        }
+        //// Getter method used to retrieve Animal weight.
+        //public double getWeight()
+        //{
+        //    return Weight;
+        //}
         
     }
 }

@@ -14,8 +14,8 @@ namespace ProgrammingAssignment1
         {
             Name = "Chick";
             Age = 0;
-            setNoise("deep, low-frequency rumbling and booming sound");
-            setWeight(1.1);
+            Noise = "deep, low-frequency rumbling and booming sound";
+            Weight = 1.1;
         }
 
         // Parameterized constructor for Cassowary class.
@@ -23,8 +23,8 @@ namespace ProgrammingAssignment1
         {
             Name = name;
             Age = age;
-            setNoise("deep, low-frequency rumbling and booming sound");
-            setWeight(weight);
+            Noise = "deep, low-frequency rumbling and booming sound";
+            Weight = weight;
         }
 
         // Overridden method to increase the age of Cassowary object.
@@ -36,14 +36,14 @@ namespace ProgrammingAssignment1
         // Overridden method to make noise of Cassowary object.
         public override void makeNoise()
         {
-            Console.WriteLine(Name + " lets out a " + getNoise() + ".");
+            Console.WriteLine(Name + " lets out a " + Noise + ".");
         }
 
         // Overridden method to print info of Cassowary object.
         public override void printInfo()
         {
             Console.WriteLine("This " + this.GetType().Name.ToLower() + " is named " + Name + " and is " + Age + " year(s) old.");
-            Console.WriteLine(Name + " weighs " + getWeight() + " pound(s) and makes a " + getNoise() + ".");
+            Console.WriteLine(Name + " weighs " + Weight + " pound(s) and makes a " + Noise + ".");
         }
     }
 }
